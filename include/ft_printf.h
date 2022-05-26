@@ -6,7 +6,7 @@
 /*   By: phongpai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 19:39:23 by phongpai          #+#    #+#             */
-/*   Updated: 2022/05/26 15:39:44 by phongpai         ###   ########.fr       */
+/*   Updated: 2022/05/26 23:50:03 by phongpai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
-#include <stdio.h>
+
 int		ft_printf(const char *str, ...);
 typedef struct s_store
 {

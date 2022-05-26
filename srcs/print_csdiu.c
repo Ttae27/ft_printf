@@ -6,7 +6,7 @@
 /*   By: phongpai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 20:14:49 by phongpai          #+#    #+#             */
-/*   Updated: 2022/05/26 15:49:56 by phongpai         ###   ########.fr       */
+/*   Updated: 2022/05/26 23:58:15 by phongpai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ void	print_s(t_store *list, int i)
 	char	*tmp;
 	char	*tmp2;
 
+	len = 0;
 	tmp = va_arg(list->input, char *);
 	if (tmp == NULL)
 	{

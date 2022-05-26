@@ -6,7 +6,7 @@
 /*   By: phongpai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 19:39:05 by phongpai          #+#    #+#             */
-/*   Updated: 2022/05/26 15:39:25 by phongpai         ###   ########.fr       */
+/*   Updated: 2022/05/26 23:28:45 by phongpai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_printf(const char *str, ...)
 	int		len;
 	t_store	*list;
 
-	list = malloc(sizeof(t_store));
+	list = ft_calloc(1, sizeof(t_store));
 	i = 0;
 	len = 0;
 	va_start(list->input, str);
@@ -28,18 +28,15 @@ int	ft_printf(const char *str, ...)
 		if (str[i] == '%')
 		{
 			print_out(list, str[i + 1]);
-			i += 2;
-		}
-		else
-		{
-			len += write(1, &str[i], 1);
 			i++;
 		}
+		else
+			len += write(1, &str[i], 1);
+		i++;
 	}
 	va_end(list->input);
 	len += list->len_con;
 	free(list);
-//	printf("len in ft_printf = %d\n",len);
 	return (len);
 }
 
