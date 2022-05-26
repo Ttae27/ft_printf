@@ -6,7 +6,7 @@
 /*   By: phongpai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 20:14:49 by phongpai          #+#    #+#             */
-/*   Updated: 2022/05/26 15:39:17 by phongpai         ###   ########.fr       */
+/*   Updated: 2022/05/26 15:49:56 by phongpai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ void	print_s(t_store *list, int i)
 	}
 	else
 		tmp2 = ft_strdup(tmp);
-	while (tmp[i] != '\0')
+	while (tmp2[i] != '\0')
 	{
 		len += write(1, &tmp2[i], 1);
 		i++;
