@@ -6,7 +6,7 @@
 /*   By: phongpai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 19:39:23 by phongpai          #+#    #+#             */
-/*   Updated: 2022/05/25 22:24:17 by phongpai         ###   ########.fr       */
+/*   Updated: 2022/05/26 15:39:44 by phongpai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ typedef struct s_store
 void	print_out(t_store *list, char mode);
 void	print_u(t_store *list);
 void	print_di(t_store *list);
-void	print_s(t_store *list);
+void	print_s(t_store *list, int i);
 void	print_c(t_store *list);
 void	print_xl(t_store *list);
 void	print_xs(t_store *list);

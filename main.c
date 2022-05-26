@@ -15,7 +15,7 @@ int	main()
 	// printf("\n");
 	// ft_printf(" %c ",'0');
 	//ft_printf("%s","Hello");
-	ft_printf(" %s %s ", " - ", "");
+	ft_printf(" Hello%s %s ", " - ", "");
 	printf("\n");
 	printf(" %s %s ", " - ", "");
 }

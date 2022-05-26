@@ -6,7 +6,7 @@
 /*   By: phongpai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 19:39:05 by phongpai          #+#    #+#             */
-/*   Updated: 2022/05/26 13:58:44 by phongpai         ###   ########.fr       */
+/*   Updated: 2022/05/26 15:39:25 by phongpai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	print_out(t_store *list, char mode)
 	if (mode == 'c')
 		print_c(list);
 	else if (mode == 's')
-		print_s(list);
+		print_s(list, 0);
 	else if (mode == 'd' || mode == 'i')
 		print_di(list);
 	else if (mode == 'u')
