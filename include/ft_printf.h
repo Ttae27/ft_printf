@@ -6,7 +6,7 @@
 /*   By: phongpai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 19:39:23 by phongpai          #+#    #+#             */
-/*   Updated: 2022/05/25 21:27:14 by phongpai         ###   ########.fr       */
+/*   Updated: 2022/05/25 22:24:17 by phongpai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
-
-int		ft_printf(const char *s, ...);
+#include <stdio.h>
+int		ft_printf(const char *str, ...);
 typedef struct s_store
 {
 	va_list	input;

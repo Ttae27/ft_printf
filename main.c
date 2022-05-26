@@ -5,7 +5,17 @@
 
 int	main()
 {
-	int i;
-	i = ft_printf("%%%%");
-	ft_printf("\n%d\n",i);
+	int i = 0;
+	int	j;
+
+	// j = ft_printf("%p\n",&i);
+	// printf("%p\n",&i);
+	// ft_printf("%d\n",j);
+	// ft_printf("%%%%");
+	// printf("\n");
+	// ft_printf(" %c ",'0');
+	//ft_printf("%s","Hello");
+	ft_printf(" %s %s ", " - ", "");
+	printf("\n");
+	printf(" %s %s ", " - ", "");
 }

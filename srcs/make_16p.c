@@ -6,7 +6,7 @@
 /*   By: phongpai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 01:13:19 by phongpai          #+#    #+#             */
-/*   Updated: 2022/05/25 21:39:23 by phongpai         ###   ########.fr       */
+/*   Updated: 2022/05/25 22:39:42 by phongpai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,7 @@ char	*convert_p(int *tmp, int count, char mode)
 	char	*out;
 
 	i = 0;
-	out = ft_calloc(count + 3, sizeof(char));
-	out[i++] = '0';
-	out[i++] = 'x'; 
+	out = ft_calloc(count + 1, sizeof(char));
 	while (count > 0)
 	{
 		if (tmp[i] < 10)

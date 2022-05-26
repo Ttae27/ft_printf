@@ -6,7 +6,7 @@
 /*   By: phongpai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 20:32:20 by phongpai          #+#    #+#             */
-/*   Updated: 2022/05/25 21:12:50 by phongpai         ###   ########.fr       */
+/*   Updated: 2022/05/25 22:38:51 by phongpai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,9 @@ void	print_p(t_store *list)
 	len = va_arg(list->input, size_t);
 	tmp = make_16p(len, 'x');
 	i = 0;
-	len = 0;
+	len = 2;
+	write(1, "0", 1);
+	write(1, "x", 1);
 	while (tmp[i] != '\0')
 	{
 		len += write(1, &tmp[i], 1);

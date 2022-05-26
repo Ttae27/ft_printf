@@ -6,7 +6,7 @@
 /*   By: phongpai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 19:39:05 by phongpai          #+#    #+#             */
-/*   Updated: 2022/05/25 21:35:29 by phongpai         ###   ########.fr       */
+/*   Updated: 2022/05/26 13:58:44 by phongpai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ int	ft_printf(const char *str, ...)
 	va_end(list->input);
 	len += list->len_con;
 	free(list);
+//	printf("len in ft_printf = %d\n",len);
 	return (len);
 }
 

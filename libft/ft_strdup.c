@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: phongpai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/25 21:16:12 by phongpai          #+#    #+#             */
-/*   Updated: 2022/05/26 13:59:57 by phongpai         ###   ########.fr       */
+/*   Created: 2022/02/21 22:10:05 by phongpai          #+#    #+#             */
+/*   Updated: 2022/02/21 22:19:01 by phongpai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
-# include <unistd.h>
-# include <stdint.h>
+char	*ft_strdup(const char *s1)
+{
+	size_t	i;
+	char	*out;
 
-void	*ft_calloc(size_t count, size_t size);
-char	*ft_itoa(int n);
-size_t	ft_strlen(const char *str);
-char	*ft_strdup(const char *s1);
-
-#endif
+	i = 0;
+	out = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1));
+	if (out == 0)
+		return (0);
+	while (s1[i])
+	{
+		out[i] = s1[i];
+		i++;
+	}
+	out[i] = '\0';
+	return (out);
+}
