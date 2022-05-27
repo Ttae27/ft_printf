@@ -6,7 +6,7 @@
 /*   By: phongpai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 20:32:20 by phongpai          #+#    #+#             */
-/*   Updated: 2022/05/26 23:58:17 by phongpai         ###   ########.fr       */
+/*   Updated: 2022/05/27 20:21:50 by phongpai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,17 +51,6 @@ void	print_xs(t_store *list)
 	free(tmp);
 }
 
-char	*do_nil(char *tmp)
-{
-	tmp = ft_calloc(6, sizeof(char));
-	tmp[0] = '(';
-	tmp[1] = 'n';
-	tmp[2] = 'i';
-	tmp[3] = 'l';
-	tmp[4] = ')';
-	return (tmp);
-}
-
 void	print_p(t_store *list)
 {
 	int		i;
@@ -70,15 +59,10 @@ void	print_p(t_store *list)
 
 	len = va_arg(list->input, size_t);
 	i = 0;
-	if (len == 0)
-		tmp = do_nil(tmp);
-	else
-	{
-		tmp = make_16p(len, 'x');
-		len = 2;
-		write(1, "0", 1);
-		write(1, "x", 1);
-	}
+	tmp = make_16p(len, 'x');
+	len = 2;
+	write(1, "0", 1);
+	write(1, "x", 1);
 	while (tmp[i] != '\0')
 	{
 		len += write(1, &tmp[i], 1);

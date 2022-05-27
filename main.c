@@ -37,6 +37,6 @@ int	main()
 // printf(" %s %s %s %s %s", " - ", "", "4", "", s2);
 // printf(" %s %s %s %s %s ", " - ", "", "4", "", "2 ");
 //printf(" NULL %s NULL ", NULL);
-	ft_printf(" %p %p ", 0, 0);
-	printf("\n");
+	i = ft_printf(" %p %p ", 0, 0);
+	printf("\n%d\n",i);
 }
