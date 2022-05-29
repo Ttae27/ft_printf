@@ -6,7 +6,7 @@
 #    By: phongpai <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/25 21:18:31 by phongpai          #+#    #+#              #
-#    Updated: 2022/05/27 21:47:09 by phongpai         ###   ########.fr        #
+#    Updated: 2022/05/29 12:03:22 by phongpai         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ NAME		= libftprintf.a
 
 all:	$(NAME)
 
-%o:	%c
+%.o:	%.c
 	$(CC) $(CFLAG) -c $< -o $@ 
 
 $(NAME):	$(OBJS) $(OBJS_LIB)
